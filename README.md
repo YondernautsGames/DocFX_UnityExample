@@ -34,7 +34,7 @@ For information on the different XML comment features available, see the followi
 
 The front page of the API reference must be placed in the **api** folder. It is very easy to get this folder out of sync, so the clean and build batch files copy this in once the source intermediates have been built by copying the **index_api.swap** file over to the folder and renaming it to **index.md**. To change the contents of the front page, you should edit the **index_api.swap** file.
 
-## Json Settings**
+## Json Settings
 The **global.json** file specifies some information required for the whole site. This includes the message in the site footer, and whether to enable the search functionality.
 
 The **docfx.json** is used to build the HTML site, while the **docfx-with-pdf.json** is used to build both the HTML and PDF docs. You can change the output folders and filenames in these files.
