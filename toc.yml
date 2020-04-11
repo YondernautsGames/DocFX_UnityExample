@@ -1,0 +1,6 @@
+- name: Manual
+  href: manual/
+  topicHref: manual/index.md
+- name: Scripting Reference
+  href: api/
+  topicHref: api/index.md

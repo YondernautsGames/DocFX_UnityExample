@@ -1,0 +1,127 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ]
+        }
+      ],
+      "dest": "api",
+	  "filter": "filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "manual/**.md",
+          "manual/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+	"xref": ["xrefmap.yml"],
+    "dest": "_site",
+    "globalMetadataFiles": ["global.json"],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+	  "templates/template-html"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  },
+  "pdf": {
+    "content": [
+      {
+        "files": [
+          "manual/**.md",
+		  "pdf/*"
+        ],
+        "exclude": [
+          "manual/index.md",
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**",
+          "**/toc.yml",
+          "**/toc.md"
+        ]
+      },
+      {
+        "files": "pdf/toc.yml"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site-pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site-pdf/**"
+        ]
+      }
+    ],
+	"xref": ["xrefmap.yml"],
+    "dest": "_site-pdf",
+	"name": "DocFX_Example",
+    "globalMetadataFiles": ["global.json"],
+    "fileMetadataFiles": [],
+    "template": [
+      "pdf.default",
+	  "templates/template-pdf"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}

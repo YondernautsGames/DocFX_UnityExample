@@ -1,0 +1,220 @@
+id: Assembly-CSharp
+language: CSharp
+name:
+  Default: Assembly-CSharp
+qualifiedName:
+  Default: Assembly-CSharp
+type: Assembly
+modifiers: {}
+items:
+- id: DocFX_Example
+  commentId: N:DocFX_Example
+  language: CSharp
+  name:
+    CSharp: DocFX_Example
+    VB: DocFX_Example
+  nameWithType:
+    CSharp: DocFX_Example
+    VB: DocFX_Example
+  qualifiedName:
+    CSharp: DocFX_Example
+    VB: DocFX_Example
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+  modifiers: {}
+  items:
+  - id: DocFX_Example.ExampleClass
+    commentId: T:DocFX_Example.ExampleClass
+    language: CSharp
+    name:
+      CSharp: ExampleClass
+      VB: ExampleClass
+    nameWithType:
+      CSharp: ExampleClass
+      VB: ExampleClass
+    qualifiedName:
+      CSharp: DocFX_Example.ExampleClass
+      VB: DocFX_Example.ExampleClass
+    type: Class
+    assemblies:
+    - Assembly-CSharp
+    namespace: DocFX_Example
+    source:
+      id: ExampleClass
+      path: E:\Repositories\GitHub\DocFX_UnityExample\src\code\ExampleClass.cs
+      startLine: 7
+    summary: "\nThis class only exists to demonstrate generating docs from C# comments\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class ExampleClass : MonoBehaviour'
+        VB: >-
+          Public Class ExampleClass
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: DocFX_Example.ExampleClass.floatValue
+      commentId: F:DocFX_Example.ExampleClass.floatValue
+      language: CSharp
+      name:
+        CSharp: floatValue
+        VB: floatValue
+      nameWithType:
+        CSharp: ExampleClass.floatValue
+        VB: ExampleClass.floatValue
+      qualifiedName:
+        CSharp: DocFX_Example.ExampleClass.floatValue
+        VB: DocFX_Example.ExampleClass.floatValue
+      type: Field
+      assemblies:
+      - Assembly-CSharp
+      namespace: DocFX_Example
+      source:
+        id: floatValue
+        path: E:\Repositories\GitHub\DocFX_UnityExample\src\code\ExampleClass.cs
+        startLine: 9
+      syntax:
+        content:
+          CSharp: public float floatValue
+          VB: Public floatValue As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DocFX_Example.ExampleClass.DoSomething(System.Int32)
+      commentId: M:DocFX_Example.ExampleClass.DoSomething(System.Int32)
+      language: CSharp
+      name:
+        CSharp: DoSomething(Int32)
+        VB: DoSomething(Int32)
+      nameWithType:
+        CSharp: ExampleClass.DoSomething(Int32)
+        VB: ExampleClass.DoSomething(Int32)
+      qualifiedName:
+        CSharp: DocFX_Example.ExampleClass.DoSomething(System.Int32)
+        VB: DocFX_Example.ExampleClass.DoSomething(System.Int32)
+      type: Method
+      assemblies:
+      - Assembly-CSharp
+      namespace: DocFX_Example
+      source:
+        id: DoSomething
+        path: E:\Repositories\GitHub\DocFX_UnityExample\src\code\ExampleClass.cs
+        startLine: 15
+      summary: "\nAn example method. It does a thing\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void DoSomething(int count)
+          VB: Public Sub DoSomething(count As Integer)
+        parameters:
+        - id: count
+          type: System.Int32
+          description: The number of times to do the thing
+      overload: DocFX_Example.ExampleClass.DoSomething*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Single:
+    name:
+      CSharp:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      VB:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Single
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  DocFX_Example.ExampleClass.DoSomething*:
+    name:
+      CSharp:
+      - id: DocFX_Example.ExampleClass.DoSomething*
+        name: DoSomething
+        nameWithType: ExampleClass.DoSomething
+        qualifiedName: DocFX_Example.ExampleClass.DoSomething
+      VB:
+      - id: DocFX_Example.ExampleClass.DoSomething*
+        name: DoSomething
+        nameWithType: ExampleClass.DoSomething
+        qualifiedName: DocFX_Example.ExampleClass.DoSomething
+    isDefinition: true
+    commentId: Overload:DocFX_Example.ExampleClass.DoSomething
+  DocFX_Example.ExampleClass:
+    name:
+      CSharp:
+      - id: DocFX_Example.ExampleClass
+        name: ExampleClass
+        nameWithType: ExampleClass
+        qualifiedName: DocFX_Example.ExampleClass
+      VB:
+      - id: DocFX_Example.ExampleClass
+        name: ExampleClass
+        nameWithType: ExampleClass
+        qualifiedName: DocFX_Example.ExampleClass
+    isDefinition: true
+    commentId: T:DocFX_Example.ExampleClass
+  DocFX_Example:
+    name:
+      CSharp:
+      - name: DocFX_Example
+        nameWithType: DocFX_Example
+        qualifiedName: DocFX_Example
+      VB:
+      - name: DocFX_Example
+        nameWithType: DocFX_Example
+        qualifiedName: DocFX_Example
+    isDefinition: true
+    commentId: N:DocFX_Example

@@ -1,0 +1,16 @@
+- name: User Manual
+  href: pdf-intro.md
+- name: Section 1
+  href: ../manual/section1-index.md
+  items:
+  - name: Sub-Section 1
+    href: ../manual/section1-sub1.md	
+  - name: Sub-Section 2
+    href: ../manual/section1-sub2.md
+- name: Section 2
+  href: ../manual/section2-index.md
+  items:
+  - name: Sub-Section 1
+    href: ../manual/section2-sub1.md	
+  - name: Sub-Section 2
+    href: ../manual/section2-sub2.md

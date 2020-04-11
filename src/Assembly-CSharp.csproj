@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Copy-paste all project cs files into the src/code folder. Sub-folder structure does not matter -->
+    <Compile Include="code\*.cs" />
+	<!-- The src/stubs folder can be used for replicating classes outside your project, eg MonoBehaviour -->
+    <Compile Include="stubs\*.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+	<AssemblyName>DocFX_Example</AssemblyName>
+  </PropertyGroup>
+</Project>
